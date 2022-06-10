@@ -1,3 +1,11 @@
+
+
+/**
+ * 
+ * @param day 
+ * @returns the number of hours of sleep based on the day.
+ */
+
 const getSleepHours = (day) => {
   if (day == "monday") {
     return 8;
@@ -26,9 +34,13 @@ console.log(getSleepHours("thursday"));
 console.log(getSleepHours("friday"));
 console.log(getSleepHours("saturday"));
 console.log(getSleepHours("sunday"));
-
 console.log(getSleepHours("dsqfsqdf"));
 
+
+/**
+ * 
+ * @returns the amont of hours of sleep on the week.
+ */
 const getActualSleepHours = () => {
   return (
     getSleepHours("monday") +
@@ -41,6 +53,10 @@ const getActualSleepHours = () => {
   );
 };
 
+/**
+ * 
+ * @returns the ideal amount of sleep hour for a week
+ */
 const getIdealSleepHours = () => {
   const idealHours = 8;
   return idealHours * 7;
@@ -49,6 +65,11 @@ const getIdealSleepHours = () => {
 console.log(getActualSleepHours());
 console.log(getIdealSleepHours());
 
+
+/**
+ * 
+ * @returns An analysis based on the amount of sleep and the ideal hours of sleep for a week 
+ */
 const calculateSleepDebt = () => {
   const actualSleepHours = getActualSleepHours();
   const idealSleepHours = getIdealSleepHours();
