@@ -53,15 +53,13 @@ const getActualSleepHours = () => {
   );
 };
 
+
+
 /**
  * 
  * @returns the ideal amount of sleep hour for a week
  */
-const getIdealSleepHours = () => {
-  const idealHours = 8;
-  return idealHours * 7;
-};
-
+ const getIdealSleepHours = idealHours => idealHours * 7 
 console.log(getActualSleepHours());
 console.log(getIdealSleepHours());
 
@@ -72,7 +70,7 @@ console.log(getIdealSleepHours());
  */
 const calculateSleepDebt = () => {
   const actualSleepHours = getActualSleepHours();
-  const idealSleepHours = getIdealSleepHours();
+  const idealSleepHours = getIdealSleepHours(8);
   const sleepDebt = actualSleepHours - idealSleepHours;
 
   if (sleepDebt == 0) {
