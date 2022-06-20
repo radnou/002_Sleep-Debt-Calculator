@@ -1,2 +1,3 @@
-# 002_Sleep Debt Calculator
- SImple debt calculator in Javascript 
+# Learn JavaScript Course Codecademy
+## 002_Sleep Debt Calculator
+ Simple debt calculator in Javascript 
